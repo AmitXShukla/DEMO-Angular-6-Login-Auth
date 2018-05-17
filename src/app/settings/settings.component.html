@@ -1,0 +1,69 @@
+<header pageTitle="Settings" imageUrl="account_circle"></header>
+<br><br><br>
+<button mat-raised-button color="primary" (click)="logout()">logout</button>
+<!--
+<form #formData='ngForm'>
+  <mat-card>
+    <mat-card-content>
+      <mat-card-actions align="start" *ngIf="error">
+        <mat-error>{{ error }}</mat-error>
+      </mat-card-actions>
+      <mat-card-title align="center">
+        Welcome {{ (userPref | async)?.authuname }}
+        <span class="small-spacer"></span>
+        <span><img src="{{ (userPref | async)?.authphoto }}" width="30" height="30"></span>
+        <span class="small-spacer"></span>
+        <button mat-raised-button color="primary" (click)="logout()">{{'btnlogout' | translate}}</button>
+      </mat-card-title>
+      <mat-card-title><span class="small-headline">{{'btnupdatesettings' | translate }}</span></mat-card-title>
+      <span class="label-hint">{{'btnportalcdreq_1' | translate }}</span>
+      <br>
+      <span class="label-error">{{'btnportalcdreq_2' | translate }}</span>
+    </mat-card-content>
+  </mat-card>
+  <mat-card *ngIf="!savedChanges else showSavedChangesCard">
+    <mat-card-content>
+      <mat-card-actions align="start" *ngIf="error">
+        <mat-error>{{ error }}</mat-error>
+      </mat-card-actions>
+      <mat-card-actions>
+        <button type="submit" [disabled]="!formData.valid" (click)="setUser(formData.value);" mat-raised-button
+          color="primary">{{'btnupdate' | translate}}</button>
+      </mat-card-actions>
+      <mat-form-field class="example-full-width">
+        <input matInput type="text" placeholder="{{ 'btnname' | translate }}" id="uname" name="uname" #uname="ngModel" required minlength="3"
+          maxlength="30" [ngModel]="(userPref | async)?.uname">
+      </mat-form-field>
+      <span *ngIf="uname.invalid && (uname.dirty || uname.touched)">
+      <mat-error *ngIf="uname.errors['required']">{{ 'errmsgname' | translate }}</mat-error>
+      <mat-error *ngIf="uname.errors['minlength']">{{ 'errmsgnameminlen' | translate }}</mat-error>
+      <mat-error *ngIf="uname.errors['maxlength']">{{ 'errmsgnamemaxlen' | translate }}</mat-error>
+      </span>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="{{ 'btnphone' | translate }}" name="phone" #phone="ngModel" [ngModel]="(userPref | async)?.phone"
+          required minlength="10" maxlength="10" pattern="[0-9]+">
+      </mat-form-field>
+      <mat-error *ngIf="phone.invalid && (phone.dirty || phone.touched)">{{ 'errmsgphone' | translate }}</mat-error>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="{{ 'btnemails' | translate }}" name="email" #email="ngModel" [ngModel]="(userPref | async)?.email"
+          required email>
+      </mat-form-field>
+      <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">{{ 'errmsgemail' | translate }}</mat-error>
+      <mat-error *ngIf="companycderror">{{ 'errportalcd' | translate }}</mat-error>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="{{ 'btnportal' | translate }}" name="portal" #portal="ngModel" [ngModel]="(userPref | async)?.portal"
+          required minlength="3" maxlength="30">
+      </mat-form-field>
+      <mat-error *ngIf="portal.invalid && (portal.dirty || portal.touched)">{{ 'errmsgcompany' | translate }}</mat-error>
+    </mat-card-content>
+  </mat-card>
+  <ng-template #showSavedChangesCard>
+    <mat-card-title>
+      <font color="red">{{ 'msgcutomersaved' | translate }}</font>
+    </mat-card-title>
+    <mat-card-actions align="start">
+      <button type="button" [routerLink]="['/aboutus']" mat-raised-button color="primary">{{ 'btnclose' | translate }}</button>
+    </mat-card-actions>
+  </ng-template>
+</form>
+-->
