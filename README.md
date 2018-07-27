@@ -42,7 +42,7 @@ $ ng g module shared/modules/ElishCustomMaterialModule<br>
 Let's copy these file content from my github repo<br>
 Copy assets/icons & assets/img<br>
 
-<h4>Create project skelton: </h4>
+<h4>Create project skeleton: </h4>
 
 $ ng g component aboutus // a filler component<br>
 $ ng g component shared/header // a sticky header component<br>
